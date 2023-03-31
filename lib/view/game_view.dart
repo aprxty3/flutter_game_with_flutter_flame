@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flame/game.dart';
 import 'package:flutter_game_with_flutter_flame/view/lobby_view.dart';
 
+import '../logic/game_logic.dart';
+
 class GameView extends StatefulWidget {
   const GameView({Key? key}) : super(key: key);
 

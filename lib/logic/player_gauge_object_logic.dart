@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'player_object_logic.dart';
 
 class PlayerGauge extends PositionComponent {
-  double _healthLeft = 1.0;
+  double healthLeft = 1.0;
 
   @override
   FutureOr<void> onLoad() {
@@ -33,12 +33,12 @@ class PlayerGauge extends PositionComponent {
     canvas.drawRect(
         Rect.fromPoints(
           const Offset(0, 0),
-          Offset(width * _healthLeft, height),
+          Offset(width * healthLeft, height),
         ),
         Paint()
-          ..color = _healthLeft > 0.5
+          ..color = healthLeft > 0.5
               ? Colors.green
-              : _healthLeft > 0.25
+              : healthLeft > 0.25
                   ? Colors.orange
                   : Colors.red);
   }

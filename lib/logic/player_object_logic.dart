@@ -3,6 +3,8 @@ import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flutter_game_with_flutter_flame/logic/player_gauge_object_logic.dart';
 
+import 'bullet_object_logic.dart';
+
 class Player extends PositionComponent with HasGameRef, CollisionCallbacks {
   Vector2 velocity = Vector2.zero();
 
@@ -38,7 +40,7 @@ class Player extends PositionComponent with HasGameRef, CollisionCallbacks {
   void updateHealth(double healthLeft) {
     for (final child in children) {
       if (child is PlayerGauge) {
-        child._healthLeft = healthLeft;
+        child.healthLeft = healthLeft;
       }
     }
   }

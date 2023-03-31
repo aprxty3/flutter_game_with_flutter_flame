@@ -6,6 +6,8 @@ import 'package:flame/image_composition.dart' as flame_image;
 import 'package:flutter/material.dart';
 import 'package:flutter_game_with_flutter_flame/logic/player_object_logic.dart';
 
+import 'bullet_object_logic.dart';
+
 class MyGame extends FlameGame with PanDetector, HasCollisionDetection {
   MyGame({required this.onGameOver, required this.onGameStateUpdate});
 
