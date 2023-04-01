@@ -54,8 +54,6 @@ class Player extends PositionComponent with HasGameRef, CollisionCallbacks {
     }
   }
 
-  /// returns the mirrored percent position of the player
-  /// to be broadcasted to other clients
   Vector2 getMirroredPercentPosition() {
     final mirroredPosition = gameRef.size - position;
     return Vector2(mirroredPosition.x / gameRef.size.x,

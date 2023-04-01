@@ -15,7 +15,6 @@ class _LobbyViewState extends State<LobbyView> {
   final List<String> _userids = [];
   bool _loading = false;
 
-  /// TODO: assign unique identifier for the user
   final myUserId = '';
 
   @override
@@ -36,8 +35,6 @@ class _LobbyViewState extends State<LobbyView> {
                   setState(() {
                     _loading = true;
                   });
-
-                  // TODO: notify the other player the start of the game
                 },
           child: const Text('start'),
         ),
