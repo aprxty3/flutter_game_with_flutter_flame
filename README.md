@@ -1,16 +1,8 @@
-# flutter_game_with_flutter_flame
+# Realtime Shooting Game with Flutter
+a mini project who created Game Apps with Flutter Framework, Flutter Flame, and Supabase.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Requirement :
+* Flutter Flame Package https://pub.dev/packages/flame
+  for Reactive Movement Function
+* Supabase https://pub.dev/packages/supabase_flutter
+  to handle low latency real time communication.
